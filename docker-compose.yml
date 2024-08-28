@@ -18,4 +18,4 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
 
   volumes:
-    -mongo-db:
+    mongo-db:
