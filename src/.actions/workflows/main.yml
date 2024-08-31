@@ -1,0 +1,30 @@
+name: Build & Deploay Node app
+
+on:
+ push:
+  branches:
+   - main
+
+  
+jobs:
+ build-deploy:
+  name: build and deploy  
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout code
+     uses: actions/checkout@v4
+ 
+   - name: setp nodejs
+     uses: actions/setup-node@v4
+     with:
+      node-version: 14
+
+   - name: install dependancies
+     run: npm install
+
+   - name: Build the project
+     run: npm run build  # Build the project  
+
+  #  - name: Unit Tests
+  #    run: npm test   
+ 
