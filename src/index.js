@@ -13,5 +13,5 @@ const app = express();
 //   .then(() => console.log("connect to db..."))
 //   .catch((err) => console.log("there is an error ",err));
 
-app.get("/", (req, res) => res.send("<h1> hello Tresmarg!d</h1>"));
+app.get("/", (req, res) => res.send("<h1> hello Mahmoud!</h1>"));
 app.listen(PORT, () => console.log(`app is up and ruining on port :${PORT}`));
